@@ -8,7 +8,7 @@ import tasksRoutes from "./src/routes/Tasks.js";
 const app = express();
 
 const swaggerDocument = JSON.parse(
-    fs.readFileSync(path.resolve("./docEPAv2.json"), "utf-8")
+    fs.readFileSync(path.resolve("./documentation.json"), "utf-8")
   );
 
 app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
